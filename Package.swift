@@ -17,7 +17,7 @@ let package = Package(
     targets: [
         .target(
             name: "UIElementsPack",
-            dependencies: [],
+            dependencies: ["CommonsPack"],
             resources: [
                 .copy("Resources")
             ]

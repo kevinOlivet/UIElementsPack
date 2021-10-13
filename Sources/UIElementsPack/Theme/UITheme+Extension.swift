@@ -7,7 +7,7 @@
 
 // swiftlint:disable uitheme_not_UIColor missing_docs nesting
 
-import BasicCommons
+import CommonsPack
 import UIKit
 
 public typealias ColorsPaletteRGB = [ColorAsRGB]
