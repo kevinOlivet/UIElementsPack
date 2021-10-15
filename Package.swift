@@ -5,7 +5,8 @@ import PackageDescription
 
 let package = Package(
     name: "UIElementsPack",
-    platforms: [.iOS(.v13)],
+    defaultLocalization: "en",
+    platforms: [.iOS(.v14)],
     products: [
         .library(
             name: "UIElementsPack",
@@ -19,7 +20,8 @@ let package = Package(
             name: "UIElementsPack",
             dependencies: ["CommonsPack"],
             resources: [
-                .copy("Resources")
+//                .copy("Resources")
+                .process("Resources")
             ]
         ),
         .testTarget(
