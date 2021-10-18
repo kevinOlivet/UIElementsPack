@@ -5,7 +5,7 @@
 //  Copyright © Jon Olivet
 //
 
-import Foundation
+import UIKit
 
 private class MyDummyClass {}
 

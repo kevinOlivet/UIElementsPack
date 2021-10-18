@@ -6,6 +6,7 @@
 //
 
 import CommonsPack
+import UIKit
 
 open class RoundedFullButton: UIButton {
 

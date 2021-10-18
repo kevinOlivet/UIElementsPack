@@ -8,7 +8,7 @@
 //swiftlint:disable cyclomatic_complexity
 
 import CommonsPack
-import Foundation
+import UIKit
 
 //swiftlint:disable missing_docs
 

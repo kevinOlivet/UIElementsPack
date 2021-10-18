@@ -7,7 +7,7 @@
 
 //swiftlint:disable function_default_parameter_at_end
 
-import Foundation
+import UIKit
 
 /// Utils for UIView
 public extension UIView {

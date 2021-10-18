@@ -8,6 +8,7 @@
 import CommonsPack
 import Foundation
 import Lottie
+import UIKit
 
 public class WelcomeAnimation: MainAnimationView {
     public convenience init(width: CGFloat, height: CGFloat) {

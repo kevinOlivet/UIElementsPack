@@ -6,7 +6,7 @@
 //
 
 import CommonsPack
-import Foundation
+import UIKit
 import Lottie
 
 public enum MainAnimation: String, CaseIterable {

@@ -6,6 +6,7 @@
 //
 
 import CommonsPack
+import UIKit
 
 public protocol BottomMessageContainerDelegate: AnyObject {
     func bottomAlertViewContainerDismissed()

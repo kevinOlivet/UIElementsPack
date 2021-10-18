@@ -8,6 +8,7 @@
 //swiftlint:disable identifier_name
 
 import CommonsPack
+import UIKit
 
 open class MontoLabel: UILabel {
 

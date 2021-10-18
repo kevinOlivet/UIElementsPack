@@ -6,6 +6,7 @@
 //
 
 import CommonsPack
+import UIKit
 
 open class RoundedButton: UIButton {
     @IBInspectable var color: UIColor = UIColor.white {

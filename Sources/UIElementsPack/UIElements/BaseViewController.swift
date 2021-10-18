@@ -7,6 +7,7 @@
 
 import CommonsPack
 import Lottie
+import UIKit
 
 /// WavezPosition - Position Enum
 public enum WavezPosition {
