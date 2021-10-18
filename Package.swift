@@ -26,6 +26,10 @@ let package = Package(
         ),
         .testTarget(
             name: "UIElementsPackTests",
-            dependencies: ["UIElementsPack"]),
+            dependencies: [
+                "UIElementsPack",
+                "CommonsPack"
+            ]
+        ),
     ]
 )

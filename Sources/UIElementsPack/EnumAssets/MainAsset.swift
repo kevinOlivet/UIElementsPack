@@ -107,7 +107,7 @@ public struct ImageAsset {
   public fileprivate(set) var key: String
 
   public var image: AssetImageTypeAlias {
-    let bundle = Bundle(for: BundleToken.self)
+      let bundle = Bundle.module
     #if os(iOS) || os(tvOS)
     let image = AssetImageTypeAlias(named: name, in: bundle, compatibleWith: nil)
     #elseif os(OSX)
