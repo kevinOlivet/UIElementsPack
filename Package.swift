@@ -14,6 +14,7 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/kevinOlivet/CommonsPack.git", .upToNextMajor(from: "1.0.0"))
+//        .package(name: "CommonsPack", path: "../CommonsPack")
     ],
     targets: [
         .target(

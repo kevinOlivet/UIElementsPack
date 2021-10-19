@@ -39,6 +39,16 @@ public class ToastView: UIView {
     }
 
     // MARK: - Init methods
+    // This replaces setupView() which doesn't work with SPM
+    override init(frame: CGRect) {
+        super.init(frame: frame) // calls designated initializer
+        let bottom = Bundle.module.loadNibNamed("ToastView", owner: self, options: nil)?.first as? UIView
+        self.addSubview(bottom!)
+    }
+
+    required public init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
 
     public convenience init(
         withTitle title: String,
@@ -49,7 +59,7 @@ public class ToastView: UIView {
         ) {
 
         self.init(frame: UIScreen.main.bounds)
-        setupView()
+//        setupView() // Now replaced with regular inits
 
         checkMarkImageView.isHidden = checkImageHidden
         titleLabel.text = title

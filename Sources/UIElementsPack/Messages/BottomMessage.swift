@@ -52,6 +52,18 @@ open class BottomMessage: UIView {
         }
     }
 
+    // MARK: - Init methods
+    // This replaces setupView() which doesn't work with SPM
+    override init(frame: CGRect) {
+        super.init(frame: frame) // calls designated initializer
+        let bottom = Bundle.module.loadNibNamed("BottomMessage", owner: self, options: nil)?.first as? UIView
+        self.addSubview(bottom!)
+    }
+
+    required public init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+
     // MARK: Create bottom error view
 
     public convenience init(
@@ -92,7 +104,8 @@ open class BottomMessage: UIView {
         ) {
 
         self.init(frame: UIScreen.main.bounds)
-        setupView()
+//        setupView() // Now replaced with regular inits
+
         buttonsStack.backgroundColor = .black
         //tells the alert, to be display infront of the wavy as a modal! duu!
         self.layer.zPosition = WavezPosition.modal
