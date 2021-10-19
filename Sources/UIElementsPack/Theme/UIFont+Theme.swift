@@ -12,9 +12,8 @@ private class MyDummyClass {}
 extension UIFont {
 
      private static func loadFontWith(name: String) {
-        let frameworkBundle = Bundle(for: MyDummyClass.self)
-        let resourceBundle = Bundle(url: frameworkBundle.bundleURL)
-        let pathForResourceString = resourceBundle?.path(forResource: name, ofType: "otf")
+        let resourceBundle = Bundle.module
+        let pathForResourceString = resourceBundle.path(forResource: name, ofType: "otf")
         let fontData = NSData(contentsOfFile: pathForResourceString!)
         let dataProvider = CGDataProvider(data: fontData!)
         let fontRef = CGFont(dataProvider!)

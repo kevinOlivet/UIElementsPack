@@ -43,7 +43,7 @@ public enum MainAsset {
     ]
 
     public static func image(for name: String) -> UIImage? {
-        let bundle = Bundle(for: BundleToken.self)
+        let bundle = Bundle.module
         let image = UIImage(named: name, in: bundle, compatibleWith: nil)
         return image
     }
@@ -66,7 +66,7 @@ public struct ColorAsset {
 public extension AssetColorTypeAlias {
   @available(iOS 11.0, tvOS 11.0, watchOS 4.0, OSX 10.13, *)
   convenience init!(asset: ColorAsset) {
-    let bundle = Bundle(for: BundleToken.self)
+    let bundle = Bundle.module
     #if os(iOS) || os(tvOS)
     self.init(named: asset.name, in: bundle, compatibleWith: nil)
     #elseif os(OSX)
@@ -92,7 +92,7 @@ public struct DataAsset {
 @available(iOS 9.0, tvOS 9.0, OSX 10.11, *)
 public extension NSDataAsset {
   convenience init!(asset: DataAsset) {
-    let bundle = Bundle(for: BundleToken.self)
+    let bundle = Bundle.module
     #if os(iOS) || os(tvOS)
     self.init(name: asset.name, bundle: bundle)
     #elseif os(OSX)
@@ -126,7 +126,7 @@ public extension AssetImageTypeAlias {
     message: "This initializer is unsafe on macOS, please use the ImageAsset.image property")
   convenience init!(asset: ImageAsset) {
     #if os(iOS) || os(tvOS)
-    let bundle = Bundle(for: BundleToken.self)
+    let bundle = Bundle.module
     self.init(named: asset.name, in: bundle, compatibleWith: nil)
     #elseif os(OSX)
     self.init(named: NSImage.Name(asset.name))

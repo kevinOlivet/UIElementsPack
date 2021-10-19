@@ -29,8 +29,8 @@ public struct ColorAsRGB: Decodable {
 public enum ColorHelper {
 
     internal static var colorsFromJSON: [ColorAsRGB] = {
-        let path = Utils.pathForJSON(resourceName: "PaletaColoresRGB", fromClass: BaseViewController.self)
-        let url = URL(fileURLWithPath: path)
+
+        let url = Bundle.module.url(forResource: "PaletaColoresRGB", withExtension: "json")!
 
         guard let data = try? Data(contentsOf: url),
             let colors = try? JSONDecoder().decode(ColorsPaletteRGB.self, from: data) else {

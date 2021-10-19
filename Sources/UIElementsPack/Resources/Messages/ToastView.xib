@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ToastView" customModule="BasicUIElements" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ToastView" customModule="UIElementsPack">
             <connections>
                 <outlet property="background" destination="iN0-l3-epB" id="4hq-ES-JZj"/>
                 <outlet property="bottomBackground" destination="3pL-NJ-MaS" id="Wld-wl-thv"/>
@@ -83,6 +83,7 @@
                     <rect key="frame" x="0.0" y="83.5" width="375" height="583.5"/>
                 </view>
             </subviews>
+            <viewLayoutGuide key="safeArea" id="eSa-7e-sHY"/>
             <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="p5T-cz-awB" firstAttribute="leading" secondItem="eSa-7e-sHY" secondAttribute="leading" id="1xX-1g-sQm"/>
@@ -97,7 +98,6 @@
                 <constraint firstAttribute="bottom" secondItem="3pL-NJ-MaS" secondAttribute="bottom" id="hMi-7r-nwu"/>
                 <constraint firstItem="3pL-NJ-MaS" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="zgb-MZ-Nke"/>
             </constraints>
-            <viewLayoutGuide key="safeArea" id="eSa-7e-sHY"/>
             <point key="canvasLocation" x="-108" y="43.628185907046479"/>
         </view>
     </objects>

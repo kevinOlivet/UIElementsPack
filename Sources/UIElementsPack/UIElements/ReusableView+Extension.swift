@@ -46,7 +46,7 @@ public extension UICollectionView {
         register(
             UINib(
                 nibName: name,
-                bundle: Utils.bundle(forClass: T.classForCoder())
+                bundle: Bundle.module
             ),
             forCellWithReuseIdentifier: T.defaultReuseIdentifier
         )
@@ -65,7 +65,7 @@ public extension UICollectionView {
         register(
             UINib(
                 nibName: name,
-                bundle: Utils.bundle(forClass: T.classForCoder())
+                bundle: Bundle.module
             ),
             forSupplementaryViewOfKind: kind,
             withReuseIdentifier: T.defaultReuseIdentifier
@@ -164,7 +164,7 @@ public extension UITableView {
         register(
             UINib(
                 nibName: name,
-                bundle: Utils.bundle(forClass: T.classForCoder())
+                bundle: Bundle.module
             ),
             forCellReuseIdentifier: name
         )

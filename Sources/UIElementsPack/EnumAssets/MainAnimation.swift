@@ -20,7 +20,7 @@ public enum MainAnimation: String, CaseIterable {
     public var lottieAnimationView: AnimationView {
         AnimationView(
             name: self.rawValue,
-            bundle: Utils.bundle(forClass: BundleAnimationToken.self)!
+            bundle: Bundle.module
         )
     }
 }
