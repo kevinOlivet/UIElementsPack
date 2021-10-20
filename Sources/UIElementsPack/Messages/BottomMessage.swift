@@ -106,7 +106,6 @@ open class BottomMessage: UIView {
         self.init(frame: UIScreen.main.bounds)
 //        setupView() // Now replaced with regular inits
 
-        buttonsStack.backgroundColor = .black
         //tells the alert, to be display infront of the wavy as a modal! duu!
         self.layer.zPosition = WavezPosition.modal
 

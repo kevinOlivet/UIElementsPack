@@ -62,8 +62,8 @@ open class BaseViewController: UIViewController {
     open func genericDisplayLoadingView(viewModel: ActivityIndicatorViewModel? = nil) {
 
         loadingView = MainActivityIndicator(
-            title: viewModel?.title ?? "LOADING".localized,
-            detail: viewModel?.detail ?? "WAIT".localized,
+            title: viewModel?.title ?? NSLocalizedString("LOADING", bundle: .module, comment: ""),
+            detail: viewModel?.detail ?? NSLocalizedString("WAIT", bundle: .module, comment: ""),
             showHeader: false
         )
 
